@@ -458,7 +458,7 @@ function Sodo (config, ct, canvas, x, y, width, height) {
 	scale = width/dem(root)/250;
 	nodeHeight = 100*scale;
 	khoangcach = (khoangcach = (height - nodeHeight)/(docao(root) - 1)) > nodeHeight? khoangcach : nodeHeight; 
-	console.log(khoangcach);
+	//console.log(khoangcach);
 	ct.lineCap = "round";
 	vesodo(root, x, y, scale);
 	
@@ -557,7 +557,7 @@ function Sodo (config, ct, canvas, x, y, width, height) {
     	for (var i = 0; i < config_xy.length; i++) {
     		if ( config_xy[i].x < e.offsetX && e.offsetX < config_xy[i].x + nodeWidth 
     			&& config_xy[i].y < e.offsetY && e.offsetY < config_xy[i].y + nodeHeight) {
-    			console.log(e.offsetX + " " + e.offsetY + " "+ i);
+    			//console.log(e.offsetX + " " + e.offsetY + " "+ i);
     			//console.log(arr);
     			elem[0].children[0].innerText = config_xy[i].hoten;
     			elem[0].children[1].innerText = config_xy[i].chucvu;
@@ -568,7 +568,7 @@ function Sodo (config, ct, canvas, x, y, width, height) {
     			break;
     		}
     	}
-    	console.log(i + " " + config_xy.length);
+    	// console.log(i + " " + config_xy.length);
     	if(i == config_xy.length) {
     		elem.css("visibility", "hidden");
     	}
